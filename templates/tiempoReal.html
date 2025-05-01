@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<style>
+    .spacing {
+        margin-left: 80px;
+    }
+
+    .content-section img {
+        max-width: 100%;
+        border-radius: 10px;
+    }
+
+    .info-section {
+        text-align: center;
+        margin: 20px auto;
+        max-width: 400px;
+        /* Reducido */
+        padding: 10px;
+        /* Reducido */
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        background-color: #fff;
+        font-size: 14px;
+        /* Tamaño de fuente reducido */
+    }
+
+    .info-section p {
+        margin: 5px 0;
+        /* Reducir el espacio entre líneas */
+        font-weight: bold;
+    }
+
+    .info-section b {
+        color: #555;
+        /* Color más neutro para resaltar menos */
+    }
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiempo Real</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!--CREACION DE LA BARRA DE NAVEGACION-->
+    <nav class="navbar navbar-expand navbar-dark" style="background-color: #202c56;">
+        <div class="nav navbar-nav">
+            <a class="nav-item nav-link active" href="{{ url_for('index') }}" aria-current="page">Inicio</a>
+            <a class="nav-item nav-link spacing" href="{{ url_for('reconocimiento') }}">Reconocimiento</a>
+            <a class="nav-item nav-link spacing" href="{{ url_for('tiempoReal') }}">Tiempo Real</a>
+            <a class="nav-item nav-link spacing" href="{{ url_for('estadisticas') }}">Estadísticas</a>
+            <a class="nav-item nav-link spacing" href="{{ url_for('contacto') }}">Contacto</a>
+            <img src="{{ url_for('static', filename='logo_fesc.png') }}" style="margin-left: 80px;" width="35px">
+            <img src="{{ url_for('static', filename='fesaLogo.png') }}" style="margin-left: 80px;" width="35px">
+            <img src="{{ url_for('static', filename='uabcs.png') }}" style="margin-left: 80px;" width="35px">
+        </div>
+        </div>
+    </nav>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-9">
+                <h1 style="text-align: center;">Reconocimiento de emociones con inteligencia artificial</h1>
+            </div>
+            <div class="row">
+                <div class="col-3">
+                    <!--<img src="../static/entrar.png" style="margin-left: 80px;" width="100px" onclick="window.location.href='login.html'">-->
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <!-- Contenido principal -->
+        <div class="container">
+            <div class="row">
+                <div class="col-4 text-center">
+                    <b>DEBES REALIZAR LAS SIGUIENTES PRUEBAS</b>
+                    <a href="#forms" class="btn btn-link">Links de Forms</a>
+                    <br>
+                    <br>
+                    <br><b>OBSERVA EL SIGUIENTE</b></br>
+                    <a href="#video" class="btn btn-link">Video</a>
+                </div>
+
+                <div class="col-4 text-center">
+                    <img src="../static/alegria.jpg" alt="Imagen persona" style="border-radius: 10px;">
+                </div>
+
+                <div class="info-section">
+                    <p>RESULTADO</p>
+                    <br>
+                    <p>LAURA MOSTRO UNA EMOCIÓN DE ALEGRÍA EN EL</p>
+                    <p>TEMA DE ÁLGEBRA LINEAL UTILIZANDO VIDEOS</p> 
+                </div>
+            </div>
+            <br>
+            <br>
+
+            <!-- Sección de resultados -->
+            <div class="info-section">
+                <p>INGRESA TU NOMBRE: LAURA</p>
+                <p>PORCENTAJE TOTAL: 99.0998</p>
+                <p>PORCENTAJE EMOCIÓN PREDOMINANTE: 65.09989</p>
+            </div>
+        </div>
+        <br>
+        <br>
+    </div>
+
+
+        <!--CREACION DEL PIE DE PAGINA-->
+        <nav class="navbar navbar-expand navbar-dark" style="background-color: #b7950b; ">
+            <div class="nav navbar-nav ">
+                <p1 style="text-align: center;">Universidad Nacional Autonoma de Mexico - Facultad de Estudios Superiores Cuautitlan - Universidad  Autonoma de Baja California - Facultad de Estudios Superiores Aragon</p1>
+            </div>
+        </nav>
+    
+</body>
+
+</html>

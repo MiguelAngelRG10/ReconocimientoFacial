@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
+    <style>
+        .spacing {
+        margin-left: 80px;
+    }
+    .navbar-nav .nav-link {
+    padding: 0.5rem 1rem; 
+   }
+    </style>
+</head>
+<body class="d-flex flex-column min-vh-100">
+    <!--CREACION DE LA BARRA DE NAVEGACION-->
+    <nav class="navbar navbar-expand navbar-dark" style="background-color: #202c56;">
+        <div class="nav navbar-nav">
+            <a class="nav-item nav-link  active" href="{{ url_for('index2') }}" aria-current="page">Inicio</a>
+            <!--<a class="nav-item nav-link spacing" href="reconocimiento.html">Reconocimiento</a>
+            <a class="nav-item nav-link spacing" href="tiempoReal.html">Tiempo Real</a>
+            <a class="nav-item nav-link spacing" href="estadisticas.html">Estadisticas</a> 
+            <a class="nav-item nav-link spacing" href="contacto.html">Contacto</a>-->
+            <img src="{{ url_for('static', filename='logo_fesc.png') }}" style="margin-left: 80px;" width="35px">
+            <img src="{{ url_for('static', filename='fesaLogo.png') }}" style="margin-left: 80px;" width="35px">
+            <img src="{{ url_for('static', filename='uabcs.png') }}" style="margin-left: 80px;" width="35px">
+
+            <!--<a class="nav-item nav-link active" href="{{ url_for('index') }}" aria-current="page">Inicio</a>
+            <a class="nav-item nav-link spacing" href="{{ url_for('reconocimiento') }}">Reconocimiento</a>
+            <a class="nav-item nav-link spacing" href="{{ url_for('tiempoReal') }}">Tiempo Real</a>
+            <a class="nav-item nav-link spacing" href="{{ url_for('estadisticas') }}">Estadísticas</a>
+            <a class="nav-item nav-link spacing" href="{{ url_for('contacto') }}">Contacto</a>
+            <img src="{{ url_for('static', filename='logo_fesc.png') }}" style="margin-left: 80px;" width="35px">
+            <img src="{{ url_for('static', filename='fesaLogo.png') }}" style="margin-left: 80px;" width="35px">
+            <img src="{{ url_for('static', filename='uabcs.png') }}" style="margin-left: 80px;" width="35px">-->
+        </div>
+        </div>
+    </nav> 
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-9">
+                <h1 style="text-align: center;">Reconocimiento de emociones con inteligencia artificial</h1>  
+            </div>
+            <div class="col-3">
+                <img src="{{ url_for('static', filename='entrar.png') }}" style="margin-left: 80px;" width="100px" onclick="window.location.href='login'">
+                <!--<img  src="{{ url_for('static', filename='entrar.png') }}" style="margin-left: 80px;" width="100px" >
+                <a href="{{ url_for('login') }}"> Login </a>-->
+            </div>
+        </div>
+    </div>
+    <br>
+    <!--CREACION DE LOS APARTADOS PARA LAS IMAGENES-->
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <div class="container">
+                    <img  src="../static/ia.png" width="100%" >
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="container">
+                    <img  src="../static/mate.jpg" width="100%" >
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="container">
+                    <img  src="../static/psicologia.jpg" width="100%" >
+                </div>
+            </div>
+        </div>
+    
+    <br>
+    <br>
+    <!--CREACION DE LOS APARTADOS PARA LAS DESCRIPCIONES-->
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <div class="container" style="border: 2px solid black;">
+                    <h2>Inteligencia Artificial</h2>
+                    <p2 style="text-align: center;">La inteligencia artificial (IA) en el reconocimiento de imágenes utiliza algoritmos
+                        y modelos de aprendizaje automático para interpretar y clasificar imágenes. Se basa 
+                        en técnicas de visión por computadora y redes neuronales profundas, especialmente
+                         las redes neuronales convolucionales (CNN). En esta investigación, se aplican pruebas
+                          psicológicas de Fennema-Sherman y se procesan 100 imágenes de un video de una clase 
+                          de matemáticas, utilizando redes neuronales de aprendizaje profundo para su entrenamiento.</p2>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="container" style="border: 2px solid black;">
+                    <h2>Matematicas</h2>
+                    <h3>.
+                        .
+                        .</h3>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="container" style="border: 2px solid black;">
+                    <h2>Pruebas psicologicas</h2>
+                    <p2 style="text-align: center;" >La Escala de Actitudes de Fennema-Sherman es una herramienta psicológica 
+                        creada para medir actitudes hacia las matemáticas, con enfoque en las 
+                        diferencias de género. Evalúa factores que pueden influir en el rendimiento y la
+                        participación en matemáticas. Sus objetivos principales incluyen identificar
+                        actitudes que afectan el desempeño, explorar factores psicológicos y
+                        culturales relacionados con el aprendizaje, y analizar la relación entre 
+                        estas actitudes y el rendimiento académico. La escala abarca diversas subescalas
+                        para evaluar diferentes dimensiones de las actitudes hacia las matemáticas.</p2>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <!--CREACION DEL PIE DE PAGINA-->
+    <nav class="navbar navbar-expand navbar-dark mt-auto" style="background-color: #b7950b;">
+        <div class="nav navbar-nav ">
+            <p1 style="text-align: center;">Universidad Nacional Autonoma de Mexico - Facultad de Estudios Superiores Cuautitlan - Universidad  Autonoma de Baja California - Facultad de Estudios Superiores Aragon</p1>
+        </div>
+    </nav> 
+</body>
+</html>
